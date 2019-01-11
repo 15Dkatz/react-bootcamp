@@ -11,13 +11,14 @@ class Title extends Component {
   state = { titleIndex: 0, fadeIn: true };
 
   componentDidMount() {
-    setTimeout(() => this.setState({ fadeIn: false }), 2000);
+    this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
 
     this.animateTitles();
   }
 
   componentWillUnmount() {
     clearInterval(this.titleInterval);
+    clearTimeout(this.timeout);
   }
 
   animateTitles = () => {
@@ -26,7 +27,7 @@ class Title extends Component {
 
       this.setState({ titleIndex, fadeIn: true });
 
-      setTimeout(() => this.setState({ fadeIn: false }), 2000);
+      this.timeout = setTimeout(() => this.setState({ fadeIn: false }), 2000);
     }, 4000);
   }
 
