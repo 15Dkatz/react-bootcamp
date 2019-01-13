@@ -29,6 +29,6 @@ const Instructions = props => {
 }
 
 export default connect(
-  state => ({ instructionsExpanded: state.instructionsExpanded }),
+  state => ({ instructionsExpanded: state.settings.instructionsExpanded }),
   { expandInstructions, collapseInstructions }
 )(Instructions);
