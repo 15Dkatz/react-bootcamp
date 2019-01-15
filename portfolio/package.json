@@ -7,12 +7,14 @@
     "history": "^4.7.2",
     "live-server": "^1.2.1",
     "parcel-bundler": "^1.10.3",
+    "pubnub": "^4.21.7",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-router-dom": "^4.3.1",
     "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "uuid": "^3.3.2"
   },
   "scripts": {
     "dev": "parcel src/index.html",
