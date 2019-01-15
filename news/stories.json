@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Bye Bye Mongo, Hello Postgres",
+    "url": "https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres",
+    "by": "philliphaydon"
+  },
+  {
+    "id": 2,
+    "title": "Glitter bomb tricks parcel thieves",
+    "url": "https://www.bbc.com/news/technology-46604625",
+    "by": "tartoran"
+  },
+  {
+    "id": 3,
+    "title": "Why parking minimums almost destroyed my town and how we repealed them (2017)",
+    "url": "https://www.strongtowns.org/journal/2017/11/22/how-parking-minimums-almost-destroyed-my-hometown-and-how-we-repealed-them",
+    "by": "tartoran"
+  },
+  {
+    "id": 4,
+    "title": "The Yoda of Silicon Valley",
+    "url": "https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html",
+    "by": "sohkamyung"
+  },
+  {
+    "id": 5,
+    "title": "How is NSA breaking so much crypto?",
+    "url": "https://freedom-to-tinker.com/blog/haldermanheninger/how-is-nsa-breaking-so-much-crypto/",
+    "by": "sohkamyung"
+  },
+  {
+    "id": 6,
+    "title": "NASA’s IMAGE satellite, lost since 2005, is alive",
+    "url": "https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html",
+    "by": "sohkamyung"
+  },
+  {
+    "id": 7,
+    "title": "MIPS Goes Open Source",
+    "url": "https://www.eetimes.com/document.asp?doc_id=1334087",
+    "by": "walterbell"
+  },
+  {
+    "id": 8,
+    "title": "Training Your Brain So That You Don’t Need Reading Glasses (2017)",
+    "url": "https://www.nytimes.com/2017/03/27/upshot/training-your-brain-so-that-you-dont-need-reading-glasses.html",
+    "by": "walterbell"
+  },
+  {
+    "id": 9,
+    "title": "Google Tech Dev Guide",
+    "url": "https://techdevguide.withgoogle.com/",
+    "by": "myroon5"
+  },
+  {
+    "id": 10,
+    "title": "Bitcoin Mining Now Consuming More Electricity Than Many Countries",
+    "url": "https://powercompare.co.uk/bitcoin/",
+    "by": "myroon5"
+  }
+]
