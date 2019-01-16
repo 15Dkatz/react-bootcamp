@@ -4,15 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./",
-    "dev": "nodemon ./"
+    "start": "npm run build-client && node ./",
+    "dev": "nodemon ./",
+    "dev-client": "parcel client/src/index.html",
+    "build-client": "parcel build client/src/index.html --out-dir client/dist",
+    "start-client": "npm run build && live-server client/dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "request": "^2.88.0"
+    "live-server": "^1.2.1",
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "request": "^2.88.0",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"

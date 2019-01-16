@@ -1,5 +1,6 @@
 const express = require('express');
 const request = require('request');
+const path = require('path');
 const stories = require('./stories');
 
 const app = express();
@@ -15,6 +16,8 @@ app.use((req, res, next) => {
 
   next();
 });
+
+app.use(express.static(path.join(__dirname, 'client/dist')));
 
 app.get('/ping', (req, res) => {
   res.send('pong!');
@@ -38,7 +41,25 @@ app.get('/topstories', (req, res, next) => {
         return next(new Error('Error requesting top stories'));
       }
 
-      res.json(JSON.parse(body));
+      const topStories = JSON.parse(body);
+      const limit = 10;
+
+      res.json(
+        topStories.slice(0, limit).map(story => (
+          request(
+            { url: `https://hacker-news.firebaseio.com/v0/item/${story}.json` },
+            (error, response, body) => {
+              if (error || response.statusCode !== 200) {
+                return next(new Error('Error requesting story item'));
+              }
+
+              console.log('JSON.parse(body)', JSON.parse(body));
+
+              return JSON.parse(body);
+            }
+          )
+        ))
+      );
     }
   )
 });
