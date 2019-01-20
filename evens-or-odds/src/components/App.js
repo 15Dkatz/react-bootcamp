@@ -35,7 +35,6 @@ class App extends Component {
             <div>
               <h3>The game is on!</h3>
               <GameState />
-              <br />
               <Guess />
               <br />
               <DrawCard />
