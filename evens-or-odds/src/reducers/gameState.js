@@ -2,7 +2,7 @@ import { SET_GUESS, SET_GAME_STARTED, DECK_DRAW } from '../actions/types';
 
 const DEFAULT_GAME_STATE = { guess: '', correctGuesses: 0 };
 
-const EVENS = ['2', '4', '6', '8', '0'];
+const EVENS = ['2', '4', '6', '8', '10'];
 const ODDS = ['ACE', '3', '5', '7', '9'];
 
 const gameStateReducer = (state = DEFAULT_GAME_STATE, action) => {
