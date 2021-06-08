@@ -24,7 +24,9 @@ class App extends Component {
               <div key={id}>
                 <a href={url}>{title}</a>
                 <p>Upvotes: {score}</p>
-                <p>{by}}</p>
+                <p>{by}-
+                 {new Date(time).toLocaleTimeString()}
+                 </p>
               </div>
             )
           })
